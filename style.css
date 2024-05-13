@@ -1,3 +1,13 @@
+/* -------------------- */
+/*  Custom Properties   */
+/* -------------------- */
+
+:root {
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+}
+
 /* ----------------- */
 /*      Reset        */
 /* ----------------- */
@@ -68,10 +78,11 @@ select {
   gap: var(--gap, 1rem);
 }
 .container {
-  max-width: 80rem;
+  max-width: 60rem;
   padding-inline: 2em;
   margin-inline: auto;
 }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -79,7 +90,40 @@ select {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clear: rect(0, 0, 0, 0);
-  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
   border: 0;
+}
+
+.box {
+  background: lightblue;
+  padding: 3rem;
+}
+
+.call-to-action {
+  /* --gap: 5rem; */
+  background-color: pink;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+/* ---------- colors utility classes -------*/
+.bg-dark {
+  background-color: hsl(var(--clr-dark));
+}
+.bg-accent {
+  background-color: hsl(var(--clr-light));
+}
+.bg-white {
+  background-color: hsl(var(--clr-white));
+}
+
+.text-dark {
+  color: hsl(var(--clr-dark));
+}
+.text-accent {
+  color: hsl(var(--clr-light));
+}
+.text-white {
+  color: hsl(var(--clr-white));
 }
