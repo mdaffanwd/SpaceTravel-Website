@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;900&family=Barlow:wght@400;700;900&family=Bellefair&display=swap");
+
 /* -------------------- */
 /*  Custom Properties   */
 /* -------------------- */
@@ -106,7 +108,7 @@ select {
   gap: var(--gap, 1rem);
 }
 .container {
-  max-width: 60rem;
+  max-width: 80rem;
   padding-inline: 2em;
   margin-inline: auto;
 }
@@ -135,7 +137,7 @@ select {
   padding: 2rem;
 }
 
-/* ---------- colors utility classes -------*/
+/* - colors utility classes - */
 .bg-dark {
   background-color: hsl(var(--clr-dark));
 }
